@@ -8,7 +8,8 @@ mongoose.set('strictQuery', false);
 const formidableMiddleware = require('express-formidable');
 app.use(formidableMiddleware());
 const staticpath = path.join(__dirname,'public');
-mongoose.connect("mongodb://127.0.0.1:27017/intern_project")
+
+mongoose.connect("mongodb+srv://Ashish:Ashish@cluster0.hrrjq87.mongodb.net/Intern?retryWrites=true&w=majority")
     .then(() => console.log("Database Connected"))
     .catch((e) => console.log(e));
 
