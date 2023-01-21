@@ -31,7 +31,7 @@ mongoose.connect("mongodb+srv://Ashish:Ashish@cluster0.hrrjq87.mongodb.net/Inter
             date1:String
         }
     )
-   const Trdetail = new mongoose.model("Trdetails",transaction);
+   const Trdetail = new mongoose.model("transactions",transaction);
 app.use(express.static(staticpath));
 
 app.set("view engine",'hbs');
